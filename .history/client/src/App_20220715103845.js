@@ -2,10 +2,9 @@ import { DatePicker } from 'antd';
 
 function App() {
   return (
-    <div className="">
+    <div className="font-bold">
       <p>truongvjpvvvv</p>
       <DatePicker></DatePicker>
-      <i class="fa-solid fa-magnifying-glass"></i>
     </div>
   );
 }
