@@ -69,7 +69,7 @@ const NavbarComponent = () => {
               <ul>
                 {NavigateRouter.map((item, index) => {
                   return (
-                    <li key={index}>
+                    <li key=>
                       <Link>
                         {item.name}
                       </Link>

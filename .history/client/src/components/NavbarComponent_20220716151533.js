@@ -67,11 +67,11 @@ const NavbarComponent = () => {
           </nav> */}
             <nav>
               <ul>
-                {NavigateRouter.map((item, index) => {
+                {NavigateRouter.map(() => {
                   return (
-                    <li key={index}>
+                    <li>
                       <Link>
-                        {item.name}
+                        {x.name}
                       </Link>
                     </li>
                   );

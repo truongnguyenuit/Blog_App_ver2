@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"
 import { Row, Col } from "antd"
 
 const NavigateRouter = [
@@ -61,23 +61,23 @@ const NavbarComponent = () => {
                     {item.name}
                   </Link>
                 </li>
-                );
+                )
               })}
             </ul>
           </nav> */}
             <nav>
-              <ul>
-                {NavigateRouter.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Link>
-                        {item.name}
-                      </Link>
-                    </li>
-                  );
 
-                })}
-              </ul>
+              {NavigateRouter.map(x => {
+                return (
+                <p>
+                  truong
+                  {console.log(x.name)}
+                </p>
+                );
+
+              })}
+
+              {/* {console.log(NavigateRouter.map(x => x.name))} */}
             </nav>
 
           </Col>

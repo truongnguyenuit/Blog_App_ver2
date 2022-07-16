@@ -6,14 +6,6 @@ import { pathName } from "./pathName";
 export const configRouter=[
   {
     path: pathName.home,
-    page: <HomePage/>,
-  },
-  {
-    path: pathName.login,
-    page: <LoginPage/>,
-  },
-  {
-    path: pathName.register,
-    page: <RegisterPage/>
+    pagew
   }
 ]

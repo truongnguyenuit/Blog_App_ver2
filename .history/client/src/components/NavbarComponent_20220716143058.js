@@ -66,18 +66,18 @@ const NavbarComponent = () => {
             </ul>
           </nav> */}
             <nav>
-              <ul>
-                {NavigateRouter.map((item, index) => {
+              {/* <ul>
+                {NavigateRouter.map(x => {
                   return (
-                    <li key={index}>
+                    <li>
                       <Link>
-                        {item.name}
+                        {x.name}
                       </Link>
                     </li>
                   );
 
                 })}
-              </ul>
+              </ul> */}
             </nav>
 
           </Col>

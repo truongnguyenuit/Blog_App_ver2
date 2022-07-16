@@ -14,6 +14,6 @@ export const configRouter=[
   },
   {
     path: pathName.register,
-    page: <RegisterPage/>
+    page: 
   }
 ]

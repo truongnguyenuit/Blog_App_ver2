@@ -4,10 +4,9 @@ import NavbarComponent from './components/NavbarComponent';
 function App() {
   return (
     <div>
-      <BrowserRouter>
 
+      <BrowserRouter>
         <NavbarComponent />
-        
         <Routes>
           {configRouter.map((item, index) => {
             return (

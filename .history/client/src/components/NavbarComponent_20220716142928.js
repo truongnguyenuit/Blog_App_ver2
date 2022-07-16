@@ -66,18 +66,7 @@ const NavbarComponent = () => {
             </ul>
           </nav> */}
             <nav>
-              <ul>
-                {NavigateRouter.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Link>
-                        {item.name}
-                      </Link>
-                    </li>
-                  );
-
-                })}
-              </ul>
+            https://www.w3.org/
             </nav>
 
           </Col>
@@ -91,7 +80,11 @@ const NavbarComponent = () => {
 
         </Row>
       </div>
-      
+      <Link
+        to={'https://www.w3.org/'}
+        className="text-stone-500 hover:text-stone-400">
+        truong
+      </Link>
 
     </>
   )

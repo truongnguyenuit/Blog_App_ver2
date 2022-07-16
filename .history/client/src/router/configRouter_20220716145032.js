@@ -13,7 +13,6 @@ export const configRouter=[
     page: <LoginPage/>,
   },
   {
-    path: pathName.register,
-    page: <RegisterPage/>
+    
   }
 ]

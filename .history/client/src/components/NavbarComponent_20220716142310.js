@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"
 import { Row, Col } from "antd"
 
 const NavigateRouter = [
@@ -67,12 +67,12 @@ const NavbarComponent = () => {
           </nav> */}
             <nav>
               <ul>
-                {NavigateRouter.map((item, index) => {
+                {NavigateRouter.map(x => {
                   return (
-                    <li key={index}>
-                      <Link>
-                        {item.name}
-                      </Link>
+                    <li>
+                      {/* <Link>
+                        {x.name}
+                      </Link> */}
                     </li>
                   );
 
@@ -91,7 +91,11 @@ const NavbarComponent = () => {
 
         </Row>
       </div>
-      
+      <Link
+        to={''}
+        className="text-stone-500 hover:text-stone-400">
+        truong
+      </Link>
 
     </>
   )

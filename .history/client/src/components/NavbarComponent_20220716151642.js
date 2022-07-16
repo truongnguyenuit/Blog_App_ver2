@@ -65,7 +65,7 @@ const NavbarComponent = () => {
               })}
             </ul>
           </nav> */}
-            <nav>
+            {/* <nav>
               <ul>
                 {NavigateRouter.map((item, index) => {
                   return (
@@ -78,7 +78,7 @@ const NavbarComponent = () => {
 
                 })}
               </ul>
-            </nav>
+            </nav> */}
 
           </Col>
 
