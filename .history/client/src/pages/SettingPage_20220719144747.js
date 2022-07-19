@@ -1,0 +1,115 @@
+import React, { useState } from "react";
+import { Row, Col } from "antd";
+import AboutComponent from "../components/AboutComponent";
+
+const SettingPage = () => {
+  return (
+    <div className="m-20 mt-[60px]">
+      <Row>
+        <Col span={19} >
+          <div className="flex justify-between items-center">
+            <p className="text-[30px] text-rose-500 ">Update Your Account</p>
+            <p className="text-[12px] text-rose-500 cursor-pointer ml-3">
+              Delete Account
+            </p>
+          </div>
+          <div>
+            <p className="text-[20px] font-serif">Profile Picture</p>
+            <div className="flex items-center">
+              <img
+                className="w-[70px] h-[70px] object-cover rounded-[20px]"
+                src={''}
+                alt=""
+              />
+              <label htmlFor="inputImg">
+                <i className="fa-solid fa-circle-user text-[30px] text-rose-500 mx-4"></i>
+                <input
+                  id="inputImg"
+                  className="hidden"
+                  type="file"
+                  accept="image/png, image/gif, image/jpeg"
+                  onChange={''}
+                />
+              </label>
+            </div>
+            <form onSubmit={''}>
+              <div className="w-full my-4">
+                <p className="text-[20px] font-serif m-0">Username</p>
+                <input
+                  className="w-full h-[33px] text-gray-500"
+                  
+                  placeholder="Username"
+                />
+                <p className="p-0 m-0 ml-2 text-red-500">
+                  {''}
+                </p>
+              </div>
+              <div className="w-full">
+                <p className="text-[20px] font-serif m-0">Email</p>
+                <input
+                  className="w-full h-[33px] text-gray-500"
+                  
+                  placeholder="Email"
+                />
+                
+              </div>
+
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white px-8 py-2 rounded-[10px]"
+                >
+                  Update
+                </button>
+              </div>
+            </form>
+            <form onSubmit={''}>
+              <div className="">
+                <p className="text-[20px] font-serif m-0">Old Password</p>
+                <input
+                  className="w-full h-[33px] text-gray-500"
+                  type="password"
+                  placeholder="old password"
+                  
+                />
+                
+              </div>
+              <div>
+                <p className="text-[20px] font-serif m-0">New password</p>
+                <input
+                  className="w-full h-[33px] text-gray-500"
+                  type="password"
+                  placeholder="New password "
+                  
+                />
+                
+              </div>
+              <div>
+                <p className="text-[20px] font-serif m-0">
+                  Confirm new password
+                </p>
+                <input
+                  className="w-full h-[33px] mt-4 text-gray-500"
+                  type="password"
+                  placeholder="Confirm password"
+                  
+                />
+                
+              </div>
+              <div className="w-full flex justify-center mb-8">
+                <button className="px-6 py-2 rounded-[10px] bg-blue-500 text-white">
+                  Update Password
+                </button>
+              </div>
+            </form>
+          </div>
+        </Col>
+        <Col span={5}>
+          <AboutComponent />
+        </Col>
+      </Row>
+    </div>
+  )
+}
+
+export default SettingPage
