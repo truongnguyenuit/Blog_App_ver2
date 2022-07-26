@@ -32,10 +32,10 @@ const CreateNewPostPage = () => {
   }
   return (
     <div className="pr-[60px] pl-[150px] pt-[50px]">
-      <div className="w-[1075px] h-[300px] mb-4">
+      <div className="w-[1075px] h-[250px] mb-4">
         <img
           className="w-full h-full object-cover rounded-[10px]"
-          src={ "https://anhdepfree.com/wp-content/uploads/2020/11/hinh-nen-phong-canh.jpg"
+          src={ "https://media.ex-cdn.com/EXP/media.vntravellive.com/files/news/2020/02/05/nhung-ngoi-nha-o-y-voi-gia-1-euro-101205.jpg"
           }
           alt=""
         />

@@ -87,7 +87,7 @@ const BlogContextProvider = ({ children }) => {
 
   // Find post when user is updating post
   const findBlog = blogTitle => {
-    console.log(blogState.allPosts)
+    console.log(blogallPosts)
     const post = blogState.allPosts.find(post => post.title === blogTitle.title)
     console.log(post)
     if (post){
