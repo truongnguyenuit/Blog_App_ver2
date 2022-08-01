@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Row, Col } from "antd";
 import AboutComponent from "../components/AboutComponent";
 import { AuthContext } from "../contexts/authContext";
@@ -6,14 +6,11 @@ import { AuthContext } from "../contexts/authContext";
 import { useFormik } from 'formik';
 import * as Yup from "yup";
 
-import { useSelector, useDispatch } from "react-redux";
-import { update } from "../redux/userSlice";
 const SettingPage = () => {
-  // const { authState: { user }, getUser, updateUser, changePassword } = useContext(AuthContext)
+  const { authState: { user }, getUser, updateUser, changePassword } = useContext(AuthContext)
 
-  const user = useSelector((state)=> state.user)
-  const dispatch = useDispatch()
 
+  
   const userFormik = useFormik({
     initialValues: {
       realname: user.realname,
@@ -28,14 +25,13 @@ const SettingPage = () => {
       img: Yup.string().required("Image is required").min(4, "Must be 4 character or more"),
     }),
     onSubmit: async (values) => {
-      dispatch(update(values))
-      // try {
-      //   const updateData = await updateUser(values)
-      //   alert(updateData)
+      try {
+        const updateData = await updateUser(values)
+        alert(updateData)
 
-      // } catch (error) {
-      //   console.log(error)
-      // }
+      } catch (error) {
+        console.log(error)
+      }
     },
   })
 
@@ -51,17 +47,17 @@ const SettingPage = () => {
       confirmPassword: Yup.string().required("Confirm password is required").min(4, "Must be 4 character or more")
     }),
     onSubmit: async (values) => {
-      // if (values.newPassword !== values.confirmPassword) {
-      //   alert("Confirm password don't match password!")
-      //   return
-      // }
-      // try {
-      //   const updatePassword = await changePassword(values)
-      //   alert(updatePassword)
+      if (values.newPassword !== values.confirmPassword) {
+        alert("Confirm password don't match password!")
+        return
+      }
+      try {
+        const updatePassword = await changePassword(values)
+        alert(updatePassword)
 
-      // } catch (error) {
-      //   console.log(error)
-      // }
+      } catch (error) {
+        console.log(error)
+      }
     }
   })
 

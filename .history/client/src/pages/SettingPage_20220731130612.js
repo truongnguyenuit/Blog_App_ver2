@@ -28,7 +28,7 @@ const SettingPage = () => {
       img: Yup.string().required("Image is required").min(4, "Must be 4 character or more"),
     }),
     onSubmit: async (values) => {
-      dispatch(update(values))
+      dispatch(update(values\))
       // try {
       //   const updateData = await updateUser(values)
       //   alert(updateData)
