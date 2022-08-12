@@ -11,7 +11,7 @@ import { update } from "../redux/userSlice";
 const SettingPage = () => {
   const { authState: { user }, getUser, updateUser, changePassword } = useContext(AuthContext)
 
-  // const user = useSelector((state)=> state.user)
+  const user = useSelector((state)=> state.user)
   const dispatch = useDispatch()
 
   const userFormik = useFormik({

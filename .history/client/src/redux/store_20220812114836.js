@@ -1,10 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit"
 import userReducer from "./userSlice"
-import blogSlice from "./blogSlice"
+import 
 
 export default configureStore({
   reducer: {
-    user: userReducer,
-    blog: blogSlice
+    user: userReducer
   }
 })

@@ -9,9 +9,9 @@ const AboutComponent = () => {
         <h1>ABOUT ME</h1>
       </div>
       <div className="w-[298px] h-[1px] bg-gray-500"></div>
-      <div className="my-[25px] w-[250px] h-[320px]">
+      <div className="my-[25px] w-[250px] h-[250px]">
         <img
-          src="https://zicxa.com/media/magefan_blog/hinh-nen-cho-dien-thoai-full-hd-sieu-dep-7.jpg"
+          src="http://hinhdep.com.vn/wp-content/uploads/2014/01/phong-canh.jpghttps://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
           alt=""
         />
       </div>

@@ -11,7 +11,7 @@ import { update } from "../redux/userSlice";
 const SettingPage = () => {
   const { authState: { user }, getUser, updateUser, changePassword } = useContext(AuthContext)
 
-  // const user = useSelector((state)=> state.user)
+  const user = useSelector((state)=> state.user)
   const dispatch = useDispatch()
 
   const userFormik = useFormik({
@@ -29,13 +29,13 @@ const SettingPage = () => {
     }),
     onSubmit: async (values) => {
       // dispatch(update(values))
-      try {
-        const updateData = await updateUser(values)
-        alert(updateData)
+      // try {
+      //   const updateData = await updateUser(values)
+      //   alert(updateData)
 
-      } catch (error) {
-        console.log(error)
-      }
+      // } catch (error) {
+      //   console.log(error)
+      // }
     },
   })
 

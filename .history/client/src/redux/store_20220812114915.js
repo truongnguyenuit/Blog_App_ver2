@@ -4,7 +4,6 @@ import blogSlice from "./blogSlice"
 
 export default configureStore({
   reducer: {
-    user: userReducer,
-    blog: blogSlice
+    user: userReducer
   }
 })
